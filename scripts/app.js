@@ -55,29 +55,29 @@ function addLastEntries(currentStudent) {
     }
     //display previous entries with no errors within console!
     if (previousArray.length >= 6) {
-        firstEntry.innerText = previousArray[1].firstName;
-        secondEntry.innerText = previousArray[2].firstName;
-        thirdEntry.innerText = previousArray[3].firstName;
-        fourthEntry.innerText = previousArray[4].firstName;
-        fifthEntry.innerText = previousArray[5].firstName;
+        firstEntry.innerText = previousArray[1].firstName + " " + previousArray[1].lastName;
+        secondEntry.innerText = previousArray[2].firstName + " " + previousArray[2].lastName;
+        thirdEntry.innerText = previousArray[3].firstName + " " + previousArray[3].lastName;
+        fourthEntry.innerText = previousArray[4].firstName+ " " + previousArray[4].lastName;
+        fifthEntry.innerText = previousArray[5].firstName + " " + previousArray[5].lastName;
     }
     else if (previousArray.length >= 5) {
-        firstEntry.innerText = previousArray[1].firstName;
-        secondEntry.innerText = previousArray[2].firstName;
-        thirdEntry.innerText = previousArray[3].firstName;
-        fourthEntry.innerText = previousArray[4].firstName;
+        firstEntry.innerText = previousArray[1].firstName + " " + previousArray[1].lastName;
+        secondEntry.innerText = previousArray[2].firstName + " " + previousArray[2].lastName;
+        thirdEntry.innerText = previousArray[3].firstName + " " + previousArray[3].lastName;
+        fourthEntry.innerText = previousArray[4].firstName+ " " + previousArray[4].lastName;
     }
     else if (previousArray.length == 4) {
-        firstEntry.innerText = previousArray[1].firstName;
-        secondEntry.innerText = previousArray[2].firstName;
-        thirdEntry.innerText = previousArray[3].firstName;
+        firstEntry.innerText =previousArray[1].firstName + " " + previousArray[1].lastName;
+        secondEntry.innerText = previousArray[2].firstName + " " + previousArray[2].lastName;
+        thirdEntry.innerText = previousArray[3].firstName + " " + previousArray[3].lastName;
     }
     else if (previousArray.length == 3) {
-        firstEntry.innerText = previousArray[1].firstName;
-        secondEntry.innerText = previousArray[2].firstName;
+        firstEntry.innerText = previousArray[1].firstName + " " + previousArray[1].lastName;
+        secondEntry.innerText = previousArray[2].firstName + " " + previousArray[2].lastName;
     }
     else {
-        firstEntry.innerText = previousArray[1].firstName;
+        firstEntry.innerText = previousArray[1].firstName + " " + previousArray[1].lastName;
     }
 
 }
