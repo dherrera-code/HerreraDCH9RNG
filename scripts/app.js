@@ -5,6 +5,8 @@ let lastName = document.getElementById("lastName");
 let codestackEmail = document.getElementById("codeStackEmail");
 let email = document.getElementById("email");
 let rngBtn = document.getElementById("randomBtn");
+let currentCounter = 0;
+//create a list or array that holds the last five shown!
 
 //create a function that pulls data from the json file!
 function getData()
@@ -20,7 +22,8 @@ function getData()
 //Need a function that will return a random data.
 function randomData(students){
     let randomIndex = Math.floor(Math.random() * students.length);
-    console.log([randomIndex]);
+    currentCounter = randomIndex;
+    console.log(currentCounter);
     return students[randomIndex];
 }
 
@@ -32,5 +35,6 @@ rngBtn.addEventListener('click' , () => {
         lastName.innerText = randomStudent.lastName;
         codestackEmail.innerText = randomStudent.codeStackEmail;
         email.innerText = randomStudent.email;
+        //Add a function that will add new entries of the last 5.
     })
 });
