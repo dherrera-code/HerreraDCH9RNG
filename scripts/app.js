@@ -12,9 +12,9 @@ let thirdEntry = document.getElementById("thirdEntry");
 let fourthEntry = document.getElementById("fourthEntry");
 let fifthEntry = document.getElementById("fifthEntry");
 
-// let currentCounter = 0;
 //create a list or array that holds the last five shown!
 let previousArray = [];
+let mySameIndexBool = false;
 
 //create a function that pulls data from the json file!
 function getData()
@@ -30,8 +30,19 @@ function getData()
 //Need a function that will return a random data.
 function randomData(students){
     let randomIndex = Math.floor(Math.random() * students.length);
-    currentCounter = randomIndex;
-    // console.log(currentCounter);
+    do{
+        mySameIndexBool = false;
+        randomIndex = Math.floor(Math.random() * students.length);
+    console.log("Return current length from RNG: " + previousArray.length);
+        for(let i = 0; i < previousArray.length; i++)
+        {
+            console.log (previousArray[i].firstName + " : " + students[randomIndex].firstName)
+            if(previousArray[i].firstName === students[randomIndex].firstName)
+            {
+                mySameIndexBool = true;
+            }
+        }
+    }while(mySameIndexBool)
     return students[randomIndex];
 }
 
@@ -40,7 +51,8 @@ function addLastEntries(currentStudent){
     {
         previousArray[0] = currentStudent;
         console.log(previousArray[0]);
-    }else if(previousArray.length < 5)
+        return;
+    }else if(previousArray.length < 6)
     {
         previousArray.unshift(currentStudent)
     }
@@ -48,15 +60,11 @@ function addLastEntries(currentStudent){
         previousArray.pop();
         previousArray.unshift(currentStudent);
     }
-    for(let i = 0; i < previousArray.length; i++)
-    {
-        console.log(previousArray[i].firstName);
-    }
-    firstEntry.innerText = previousArray[0].firstName;
-    secondEntry.innerText = previousArray[1].firstName;
-    thirdEntry.innerText = previousArray[2].firstName;
-    fourthEntry.innerText = previousArray[3].firstName;
-    fifthEntry.innerText =previousArray[4].firstName;
+    firstEntry.innerText = previousArray[1].firstName;
+    secondEntry.innerText = previousArray[2].firstName;
+    thirdEntry.innerText = previousArray[3].firstName;
+    fourthEntry.innerText = previousArray[4].firstName;
+    fifthEntry.innerText =previousArray[5].firstName;
 }
 
 rngBtn.addEventListener('click' , () => {

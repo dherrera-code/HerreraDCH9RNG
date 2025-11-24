@@ -8,7 +8,9 @@ body{
     background-repeat: no-repeat;    
     min-height: 100vh;
 }
-
+h1{
+    font-size: 25px;
+}
 button{
     padding-left: 15px;
     padding-right: 15px;
@@ -17,4 +19,15 @@ button{
 }
 .title-spacing{
     margin-top: 8rem;
+}
+.highlighting{
+    background-color: rgb(255, 184, 52);
+    padding: 10px 20px;
+}
+@media (max-width: 500px)
+{
+    body{
+        background-size: 100% 100%;
+        background-position: center;
+    }
 }
