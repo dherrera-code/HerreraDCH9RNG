@@ -1,0 +1,31 @@
+{
+    "students" : [
+        {
+            "firstName": "Arianna",
+            "lastName" : "Huntley",
+            "codeStackEmail": "ahuntley@codestack.co",
+            "email": "clair10022004@gmail.com"
+        },
+        {
+            "firstName": "Brandon",
+            "lastName" : "Estrada",
+            "codeStackEmail": "bestrada@codestack.co",
+            "email": "bestrada8800@gmail.com"
+        },
+        {
+            "firstName": "Brandon",
+            "lastName" : "Van Horn",
+            "codeStackEmail": "bmdvanhorn@codestack.co",
+            "email": "bmdvanhorn@icloud.com"
+        },
+        {
+            "firstName": "Bryce",
+            "lastName" : "Mack",
+            "codeStackEmail": "bmack@codestack.co",
+            "email": "brycewmach50@outlook.com"
+        }
+
+    ]
+
+
+}
