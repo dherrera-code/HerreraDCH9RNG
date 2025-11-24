@@ -28,7 +28,7 @@
             "firstName": "Carlos",
             "lastName" : "Lopez",
             "codeStackEmail": "clopez@codestack.co",
-            "email": ""
+            "email": "carlos.lopez5639@gmail.com"
         },
         {
             "firstName": "Daniel",
@@ -79,14 +79,14 @@
             "email": "Duartemjoseph@gmail.com"
         },
         {
-            "firstName": "",
-            "lastName" : "",
+            "firstName": "Kellon",
+            "lastName" : "Dixon",
             "codeStackEmail": "kdixon@codestack.co",
             "email": ""
         },
         {
-            "firstName": "",
-            "lastName" : "",
+            "firstName": "Lucas",
+            "lastName" : "Guptill",
             "codeStackEmail": "lguptill@codestack.co",
             "email": ""
         },
@@ -103,14 +103,14 @@
             "email": "Pallavi.Pattanashetti@gmail.com"
         },
         {
-            "firstName": "",
-            "lastName" : "",
+            "firstName": "Rizwan",
+            "lastName" : "Mehmoo",
             "codeStackEmail": "rmehmoo@codestack.co",
             "email": ""
         },
         {
-            "firstName": "",
-            "lastName" : "",
+            "firstName": "Sammer",
+            "lastName" : "Saqa",
             "codeStackEmail": "ssaqa@codestack.co",
             "email": ""
         },
@@ -150,9 +150,5 @@
             "codeStackEmail": "jdekok@codestack.co",
             "email": "jdekok@sjcoe.net"
         }
-        
-
     ]
-
-
 }
