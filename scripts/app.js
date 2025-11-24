@@ -22,7 +22,6 @@ function getData()
     return fetch("../data/studentInfo.json")
     .then((response) => response.json())
     .then((data) => {
-        // console.log(data.students);
         return data.students;
     })
 }
@@ -50,7 +49,6 @@ function addLastEntries(currentStudent){
     if (previousArray.length == 0)
     {
         previousArray[0] = currentStudent;
-        console.log(previousArray[0]);
         return;
     }else if(previousArray.length < 6)
     {
@@ -60,17 +58,18 @@ function addLastEntries(currentStudent){
         previousArray.pop();
         previousArray.unshift(currentStudent);
     }
-    firstEntry.innerText = previousArray[1].firstName;
-    secondEntry.innerText = previousArray[2].firstName;
-    thirdEntry.innerText = previousArray[3].firstName;
-    fourthEntry.innerText = previousArray[4].firstName;
-    fifthEntry.innerText =previousArray[5].firstName;
+        
+        firstEntry.innerText = previousArray[1].firstName;
+        secondEntry.innerText = previousArray[2].firstName;
+        thirdEntry.innerText = previousArray[3].firstName;
+        fourthEntry.innerText = previousArray[4].firstName;
+        fifthEntry.innerText =previousArray[5].firstName;
+    
 }
 
 rngBtn.addEventListener('click' , () => {
     getData().then((students) => {
         let randomStudent = randomData(students);
-        console.log(randomStudent);
         firstName.innerText = randomStudent.firstName;
         lastName.innerText = randomStudent.lastName;
         codestackEmail.innerText = randomStudent.codeStackEmail;
