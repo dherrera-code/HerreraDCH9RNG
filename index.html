@@ -1,18 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RNG Student Info</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="./style/style.css">
+
 </head>
+
 <body>
-    <h1>RNG Assignment</h1>
-    
+    <h1 class="text-center mb-5 title-spacing">Student Directory</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-5 text-end">
+                <h1>First Name: </h1>
+                <h1>Last Name: </h1>
+                <h2>Codestack Email: </h2>
+                <h2>Email: </h2>
+
+            </div>
+            <div class="col">
+                <h1 id="firstName">First Name Here </h1>
+                <h1 id="lastName">Last Name Here </h1>
+                <h2 id="codeStackEmail">Codestack Email Here </h2>
+                <h2 id="email">Email Here </h2>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col d-flex justify-content-center">
+                <button class="mt-5">Randomize Next student!</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- This will show the first and last name! -->
+     <!-- IN JS, use pop and push to change last 5 generated!!! -->
+    <div id="lastFiveContainer" class="Last 5 Generated container">
+        <!-- <h1>firstName</h1>
+        <h1>second name</h1>
+        <h1> third name</h1>
+        <h1>fourthname</h1>
+        <h1> fifth anem</h1> -->
+    </div>
 
 
-
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
     <script src="./scripts/app.js"></script>
 </body>
+
 </html>
