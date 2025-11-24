@@ -31,9 +31,7 @@ function randomData(students) {
     do {
         mySameIndexBool = false;
         randomIndex = Math.floor(Math.random() * students.length);
-        console.log("Return current length from RNG: " + previousArray.length);
         for (let i = 0; i < previousArray.length; i++) {
-            console.log(previousArray[i].firstName + " : " + students[randomIndex].firstName)
             if (previousArray[i].firstName === students[randomIndex].firstName) {
                 mySameIndexBool = true;
             }
