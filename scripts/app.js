@@ -17,57 +17,72 @@ let previousArray = [];
 let mySameIndexBool = false;
 
 //create a function that pulls data from the json file!
-function getData()
-{
+function getData() {
     return fetch("../data/studentInfo.json")
-    .then((response) => response.json())
-    .then((data) => {
-        return data.students;
-    })
+        .then((response) => response.json())
+        .then((data) => {
+            return data.students;
+        })
 }
 // getData();
 //Need a function that will return a random data.
-function randomData(students){
+function randomData(students) {
     let randomIndex = Math.floor(Math.random() * students.length);
-    do{
+    do {
         mySameIndexBool = false;
         randomIndex = Math.floor(Math.random() * students.length);
-    console.log("Return current length from RNG: " + previousArray.length);
-        for(let i = 0; i < previousArray.length; i++)
-        {
-            console.log (previousArray[i].firstName + " : " + students[randomIndex].firstName)
-            if(previousArray[i].firstName === students[randomIndex].firstName)
-            {
+        console.log("Return current length from RNG: " + previousArray.length);
+        for (let i = 0; i < previousArray.length; i++) {
+            console.log(previousArray[i].firstName + " : " + students[randomIndex].firstName)
+            if (previousArray[i].firstName === students[randomIndex].firstName) {
                 mySameIndexBool = true;
             }
         }
-    }while(mySameIndexBool)
+    } while (mySameIndexBool)
     return students[randomIndex];
 }
 
-function addLastEntries(currentStudent){
-    if (previousArray.length == 0)
-    {
+function addLastEntries(currentStudent) {
+    if (previousArray.length == 0) {
         previousArray[0] = currentStudent;
         return;
-    }else if(previousArray.length < 6)
-    {
+    } else if (previousArray.length < 6) {
         previousArray.unshift(currentStudent)
     }
-    else{
+    else {
         previousArray.pop();
         previousArray.unshift(currentStudent);
     }
-        
+    //display previous entries with no errors within console!
+    if (previousArray.length >= 6) {
         firstEntry.innerText = previousArray[1].firstName;
         secondEntry.innerText = previousArray[2].firstName;
         thirdEntry.innerText = previousArray[3].firstName;
         fourthEntry.innerText = previousArray[4].firstName;
-        fifthEntry.innerText =previousArray[5].firstName;
-    
+        fifthEntry.innerText = previousArray[5].firstName;
+    }
+    else if (previousArray.length >= 5) {
+        firstEntry.innerText = previousArray[1].firstName;
+        secondEntry.innerText = previousArray[2].firstName;
+        thirdEntry.innerText = previousArray[3].firstName;
+        fourthEntry.innerText = previousArray[4].firstName;
+    }
+    else if (previousArray.length == 4) {
+        firstEntry.innerText = previousArray[1].firstName;
+        secondEntry.innerText = previousArray[2].firstName;
+        thirdEntry.innerText = previousArray[3].firstName;
+    }
+    else if (previousArray.length == 3) {
+        firstEntry.innerText = previousArray[1].firstName;
+        secondEntry.innerText = previousArray[2].firstName;
+    }
+    else {
+        firstEntry.innerText = previousArray[1].firstName;
+    }
+
 }
 
-rngBtn.addEventListener('click' , () => {
+rngBtn.addEventListener('click', () => {
     getData().then((students) => {
         let randomStudent = randomData(students);
         firstName.innerText = randomStudent.firstName;
