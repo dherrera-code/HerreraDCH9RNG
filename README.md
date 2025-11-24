@@ -8,4 +8,4 @@
 
  // Started: 11/24/2025
 
-// Peer Review:  
+// Peer Review: Carlos Lopez: Everything looks good responsiveness is there the only issue I found was the background get a little squished when you get to the smaller screens
