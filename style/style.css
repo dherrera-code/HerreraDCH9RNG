@@ -17,18 +17,12 @@ button{
 }
 /* Created spacing from the top of the screen */
 .title-spacing{
-    margin-top: 9rem;
+    margin-top: 4rem;
 }
 .highlighting{
     background-color: rgb(255, 198, 91);
     padding: 10px 20px;
 }
-.box{
-    width: 40rem;
-    display: flex;
-    justify-content: center
-}
-
     
 @media (max-width: 500px)
 {   /* Added responsiveness towards mobile version */
@@ -38,11 +32,5 @@ button{
     }
     .center-text {
         text-align: center;
-    }
-}
-@media (max-width: 800px)
-{
-    .box{
-        
     }
 }
