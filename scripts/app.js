@@ -52,29 +52,29 @@ function addLastEntries(currentStudent) {
     }
     //display previous entries with no errors within console!
     if (previousArray.length >= 6) {
-        firstEntry.innerText = previousArray[1].firstName + " " + previousArray[1].lastName;
-        secondEntry.innerText = previousArray[2].firstName + " " + previousArray[2].lastName;
-        thirdEntry.innerText = previousArray[3].firstName + " " + previousArray[3].lastName;
-        fourthEntry.innerText = previousArray[4].firstName+ " " + previousArray[4].lastName;
-        fifthEntry.innerText = previousArray[5].firstName + " " + previousArray[5].lastName;
+        firstEntry.innerText = previousArray[1].firstName + " " + previousArray[1].lastName + " : " + previousArray[1].codeStackEmail + " " + previousArray[1].email;
+        secondEntry.innerText = previousArray[2].firstName + " " + previousArray[2].lastName + " : " + previousArray[2].codeStackEmail + " " + previousArray[2].email;
+        thirdEntry.innerText = previousArray[3].firstName + " " + previousArray[3].lastName + " : " + previousArray[3].codeStackEmail + " " + previousArray[3].email;
+        fourthEntry.innerText = previousArray[4].firstName+ " " + previousArray[4].lastName + " : " + previousArray[4].codeStackEmail + " " + previousArray[4].email;
+        fifthEntry.innerText = previousArray[5].firstName + " " + previousArray[5].lastName + " : " + previousArray[5].codeStackEmail + " " + previousArray[5].email;
     }
     else if (previousArray.length >= 5) {
-        firstEntry.innerText = previousArray[1].firstName + " " + previousArray[1].lastName;
-        secondEntry.innerText = previousArray[2].firstName + " " + previousArray[2].lastName;
-        thirdEntry.innerText = previousArray[3].firstName + " " + previousArray[3].lastName;
-        fourthEntry.innerText = previousArray[4].firstName+ " " + previousArray[4].lastName;
+        firstEntry.innerText = previousArray[1].firstName + " " + previousArray[1].lastName + " : " + previousArray[1].codeStackEmail + " " + previousArray[1].email;
+        secondEntry.innerText = previousArray[2].firstName + " " + previousArray[2].lastName + " : " + previousArray[2].codeStackEmail + " " + previousArray[2].email;
+        thirdEntry.innerText = previousArray[3].firstName + " " + previousArray[3].lastName + " : " + previousArray[3].codeStackEmail + " " + previousArray[3].email;
+        fourthEntry.innerText = previousArray[4].firstName+ " " + previousArray[4].lastName + " : " + previousArray[4].codeStackEmail + " " + previousArray[4].email;
     }
     else if (previousArray.length == 4) {
-        firstEntry.innerText =previousArray[1].firstName + " " + previousArray[1].lastName;
-        secondEntry.innerText = previousArray[2].firstName + " " + previousArray[2].lastName;
-        thirdEntry.innerText = previousArray[3].firstName + " " + previousArray[3].lastName;
+        firstEntry.innerText = previousArray[1].firstName + " " + previousArray[1].lastName + " : " + previousArray[1].codeStackEmail + " " + previousArray[1].email;
+        secondEntry.innerText = previousArray[2].firstName + " " + previousArray[2].lastName + " : " + previousArray[2].codeStackEmail + " " + previousArray[2].email;
+        thirdEntry.innerText = previousArray[3].firstName + " " + previousArray[3].lastName + " : " + previousArray[3].codeStackEmail + " " + previousArray[3].email;
     }
     else if (previousArray.length == 3) {
-        firstEntry.innerText = previousArray[1].firstName + " " + previousArray[1].lastName;
-        secondEntry.innerText = previousArray[2].firstName + " " + previousArray[2].lastName;
+        firstEntry.innerText = previousArray[1].firstName + " " + previousArray[1].lastName + " : " + previousArray[1].codeStackEmail + " " + previousArray[1].email;
+        secondEntry.innerText = previousArray[2].firstName + " " + previousArray[2].lastName + " : " + previousArray[2].codeStackEmail + " " + previousArray[2].email;
     }
     else {
-        firstEntry.innerText = previousArray[1].firstName + " " + previousArray[1].lastName;
+        firstEntry.innerText = previousArray[1].firstName + " " + previousArray[1].lastName + " : " + previousArray[1].codeStackEmail + " " + previousArray[1].email;
     }
 
 }
