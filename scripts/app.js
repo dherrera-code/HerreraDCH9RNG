@@ -1,11 +1,10 @@
 //create data elements to manipulate DOM
-
 let firstName = document.getElementById("firstName");
 let lastName = document.getElementById("lastName");
 let codestackEmail = document.getElementById("codeStackEmail");
 let email = document.getElementById("email");
 let rngBtn = document.getElementById("randomBtn");
-
+//Created Data elements to hold the list of previous 5 entries
 let firstEntry = document.getElementById("firstEntry");
 let secondEntry = document.getElementById("secondEntry");
 let thirdEntry = document.getElementById("thirdEntry");
@@ -14,6 +13,7 @@ let fifthEntry = document.getElementById("fifthEntry");
 
 //create a list or array that holds the last five shown!
 let previousArray = [];
+//Used bool to test if random index is equal to current and previous 5!
 let mySameIndexBool = false;
 
 //create a function that pulls data from the json file!
@@ -24,7 +24,6 @@ function getData() {
             return data.students;
         })
 }
-// getData();
 //Need a function that will return a random data.
 function randomData(students) {
     let randomIndex = Math.floor(Math.random() * students.length);

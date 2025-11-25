@@ -1,10 +1,7 @@
 body{
-    /* background-color: rgb(250, 179, 48); */
     font-family: comic sans;
-
     background-image: url(../assets/Thanksgiving-BG-AI.jpg);
     background-size: 100% 100%;
-    /* background-position: center; */
     background-repeat: no-repeat;    
     min-height: 100vh;
 }
@@ -18,15 +15,16 @@ button{
     padding-bottom: 8px;
     background-color:orange;
 }
+/* Created spacing from the top of the screen */
 .title-spacing{
-    margin-top: 8rem;
+    margin-top: 9rem;
 }
 .highlighting{
     background-color: rgb(255, 198, 91);
     padding: 10px 20px;
 }
 @media (max-width: 500px)
-{
+{   /* Added responsiveness towards mobile version */
     body{
         background-size: auto 100%;
         background-position: top center;
